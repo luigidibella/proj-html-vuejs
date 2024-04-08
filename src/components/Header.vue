@@ -6,12 +6,70 @@ export default {
 
 <template>
   <header>
-    <div class="container text-center">
-      <h1>header</h1>
-    </div>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid my_container my-3">
+        <a class="navbar-brand" href="#">
+          <img src="..\assets\images\MasterStudy-1.svg" alt="">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Courses Formats</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Add Course</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Demos</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContentSocial">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
   </header>
 </template>
 
 <style lang="scss" scoped>
+
+.my_container{
+  max-width: 1180px;
+}
 
 </style>

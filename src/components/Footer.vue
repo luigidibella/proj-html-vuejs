@@ -6,8 +6,8 @@ export default {
 
 <template>
   <footer>
-    <div class="container text-center">
-      <h1>footer</h1>
+    <div class="container-fluid text-center bg-warning">
+      <h1>Footer</h1>
     </div>
   </footer>
 </template>
