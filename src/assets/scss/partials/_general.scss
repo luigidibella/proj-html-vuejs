@@ -8,9 +8,13 @@
 
 body {
   background-color: $bg-body;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 }
 
 img {
   max-width: 100%;
+}
+
+.my_container{
+  width: 1170px !important;
 }

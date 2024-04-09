@@ -51,7 +51,7 @@ export default {
     <!-- /Copertina -->
     
     <!-- Bio -->
-    <div class="bio d-flex justify-content-between align-items-center my-5 py-5 my-3 text-start">
+    <div class="bio my_container d-flex justify-content-between align-items-center my-5 py-5 my-3 text-start">
       <div class="left d-flex flex-column justify-content-center align-items-center">
         <div class="founder mb-3">
           <h2>Hey there, my name is John Doe. I'm the founder of the Brain Academy.</h2>
@@ -71,13 +71,7 @@ export default {
   
 </template>
 
-<style lang="scss">
-
-@use '../../assets/scss/main.scss';
-
-img{
-  max-width: 100%;
-}
+<style lang="scss" scoped>
 
 .title{
   width: 520px;
@@ -97,10 +91,6 @@ img{
       font-size: 3rem;
     }
   }
-}
-
-.bio{
-  width: 1170px;
 }
 
 .left{

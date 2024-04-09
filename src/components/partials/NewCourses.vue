@@ -10,7 +10,7 @@ export default {
       <h2>New Courses</h2>
     </div> 
 
-    <div class="row row-cols-3 my_sub_container">
+    <div class="row row-cols-3 my_container">
       
       <div class="col py-2">
         <div class="card position-relative">
@@ -188,9 +188,5 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-
-.my_sub_container{
-  width: 1170px;
-}
 
 </style>

@@ -29,8 +29,8 @@ export default {
 
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
-@import './assets/scss/main.scss';
+@use './assets/scss/main.scss';
 
 </style>

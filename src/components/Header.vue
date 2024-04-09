@@ -74,8 +74,4 @@ export default {
 
 <style lang="scss" scoped>
 
-.my_container{
-  max-width: 1180px;
-}
-
 </style>
