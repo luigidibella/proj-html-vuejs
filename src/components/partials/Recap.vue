@@ -85,8 +85,9 @@ export default {
 <style lang="scss" scoped>
 
 .bg_img{
-  background-image: url(../../assets/images/counter-1919x1101.jpg);
   height: 600px;
+  background-image: url(../../assets/images/counter-1919x1101.jpg);
+  background-position-x: center;
 }
 
 </style>

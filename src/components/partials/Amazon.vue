@@ -26,6 +26,7 @@ export default {
 
 .bg_img{
   background-image: url(../../assets/images/slider_1-1917x607-1914x606.jpg);
+  background-position-x: center;
   background-size: cover;
 }
 
