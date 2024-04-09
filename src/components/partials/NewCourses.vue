@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <div class="container-fluid d-flex flex-column justify-content-center align-items-center bg-body-tertiary py-4">
+  <div class="container-fluid flex-center flex-column bg-body-tertiary py-4">
     <div class="section_title my-4">
       <h2>New Courses</h2>
     </div> 
@@ -23,17 +23,17 @@ export default {
           <div class="card-body">
             <h5 class="card-title">How to be a DJ? Make Electronic Music</h5>
             <p class="card-text">Electronic</p>
-            <div class="options d-flex justify-content-center align-items-center">
+            <div class="options flex-center">
               <div class="level me-2">
-                <i class="fa-solid fa-signal text-warning"></i>
+                <i class="fa-solid fa-signal color-buttercup"></i>
                 <span> Advanced</span>
               </div>
               <div class="lectures me-2">
-                <i class="fa-solid fa-list-ul text-warning"></i>
+                <i class="fa-solid fa-list-ul color-buttercup"></i>
                 <span> 8 Lectures</span>
               </div>
               <div class="hours">
-                <i class="fa-regular fa-clock text-warning"></i>
+                <i class="fa-regular fa-clock color-buttercup"></i>
                 <span> 6 Hours</span>
               </div>
             </div>
@@ -51,17 +51,17 @@ export default {
           <div class="card-body">
             <h5 class="card-title">How to be a DJ? Make Electronic Music</h5>
             <p class="card-text">Electronic</p>
-            <div class="options d-flex justify-content-center align-items-center">
+            <div class="options flex-center">
               <div class="level me-2">
-                <i class="fa-solid fa-signal text-warning"></i>
+                <i class="fa-solid fa-signal color-buttercup"></i>
                 <span> Advanced</span>
               </div>
               <div class="lectures me-2">
-                <i class="fa-solid fa-list-ul text-warning"></i>
+                <i class="fa-solid fa-list-ul color-buttercup"></i>
                 <span> 8 Lectures</span>
               </div>
               <div class="hours">
-                <i class="fa-regular fa-clock text-warning"></i>
+                <i class="fa-regular fa-clock color-buttercup"></i>
                 <span> 6 Hours</span>
               </div>
             </div>
@@ -79,17 +79,17 @@ export default {
           <div class="card-body">
             <h5 class="card-title">How to be a DJ? Make Electronic Music</h5>
             <p class="card-text">Electronic</p>
-            <div class="options d-flex justify-content-center align-items-center">
+            <div class="options flex-center">
               <div class="level me-2">
-                <i class="fa-solid fa-signal text-warning"></i>
+                <i class="fa-solid fa-signal color-buttercup"></i>
                 <span> Advanced</span>
               </div>
               <div class="lectures me-2">
-                <i class="fa-solid fa-list-ul text-warning"></i>
+                <i class="fa-solid fa-list-ul color-buttercup"></i>
                 <span> 8 Lectures</span>
               </div>
               <div class="hours">
-                <i class="fa-regular fa-clock text-warning"></i>
+                <i class="fa-regular fa-clock color-buttercup"></i>
                 <span> 6 Hours</span>
               </div>
             </div>
@@ -107,17 +107,17 @@ export default {
           <div class="card-body">
             <h5 class="card-title">How to be a DJ? Make Electronic Music</h5>
             <p class="card-text">Electronic</p>
-            <div class="options d-flex justify-content-center align-items-center">
+            <div class="options flex-center">
               <div class="level me-2">
-                <i class="fa-solid fa-signal text-warning"></i>
+                <i class="fa-solid fa-signal color-buttercup"></i>
                 <span> Advanced</span>
               </div>
               <div class="lectures me-2">
-                <i class="fa-solid fa-list-ul text-warning"></i>
+                <i class="fa-solid fa-list-ul color-buttercup"></i>
                 <span> 8 Lectures</span>
               </div>
               <div class="hours">
-                <i class="fa-regular fa-clock text-warning"></i>
+                <i class="fa-regular fa-clock color-buttercup"></i>
                 <span> 6 Hours</span>
               </div>
             </div>
@@ -135,17 +135,17 @@ export default {
           <div class="card-body">
             <h5 class="card-title">How to be a DJ? Make Electronic Music</h5>
             <p class="card-text">Electronic</p>
-            <div class="options d-flex justify-content-center align-items-center">
+            <div class="options flex-center">
               <div class="level me-2">
-                <i class="fa-solid fa-signal text-warning"></i>
+                <i class="fa-solid fa-signal color-buttercup"></i>
                 <span> Advanced</span>
               </div>
               <div class="lectures me-2">
-                <i class="fa-solid fa-list-ul text-warning"></i>
+                <i class="fa-solid fa-list-ul color-buttercup"></i>
                 <span> 8 Lectures</span>
               </div>
               <div class="hours">
-                <i class="fa-regular fa-clock text-warning"></i>
+                <i class="fa-regular fa-clock color-buttercup"></i>
                 <span> 6 Hours</span>
               </div>
             </div>
@@ -163,17 +163,17 @@ export default {
           <div class="card-body">
             <h5 class="card-title">How to be a DJ? Make Electronic Music</h5>
             <p class="card-text">Electronic</p>
-            <div class="options d-flex justify-content-center align-items-center">
+            <div class="options flex-center">
               <div class="level me-2">
-                <i class="fa-solid fa-signal text-warning"></i>
+                <i class="fa-solid fa-signal color-buttercup"></i>
                 <span> Advanced</span>
               </div>
               <div class="lectures me-2">
-                <i class="fa-solid fa-list-ul text-warning"></i>
+                <i class="fa-solid fa-list-ul color-buttercup"></i>
                 <span> 8 Lectures</span>
               </div>
               <div class="hours">
-                <i class="fa-regular fa-clock text-warning"></i>
+                <i class="fa-regular fa-clock color-buttercup"></i>
                 <span> 6 Hours</span>
               </div>
             </div>
@@ -188,5 +188,18 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+
+@use '../../assets/scss/partials/variables' as *;
+
+.color-buttercup{
+  color: $Buttercup;
+}
+
+.btn{
+  background-color: $Buttercup;
+  &:hover{
+    background-color: #d9a61b;
+  }
+}
 
 </style>

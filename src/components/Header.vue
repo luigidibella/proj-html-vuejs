@@ -74,8 +74,11 @@ export default {
 
 <style lang="scss" scoped>
 
+@use '../assets/scss/partials/variables' as *;
+
+.nav-link:hover,
 .active{
-  border-bottom: 2px solid #f2b91e;
+  border-bottom: 2px solid $Buttercup;
 }
 
 </style>
