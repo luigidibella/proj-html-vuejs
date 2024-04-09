@@ -183,7 +183,7 @@ export default {
 
     </div>
 
-    <div class="btn btn-warning rounded-5 text-white mt-3">LOAD MORE</div>
+    <div class="btn btn-warning rounded-5 mt-3">LOAD MORE</div>
   </div>
 </template>
 
@@ -196,6 +196,7 @@ export default {
 }
 
 .btn{
+  color: $White;
   background-color: $Buttercup;
   &:hover{
     background-color: #d9a61b;

@@ -6,7 +6,7 @@ export default {
 
 <template>
   <footer>
-    <div class="container-fluid bg-warning d-flex justify-content-center align-items-center py-4">
+    <div class="container-fluid flex-center bg-buttercup py-4">
       <div class="row row-cols-4 my_container">
         <div class="col">
           <div class="title">
@@ -112,6 +112,12 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+
+@use '../assets/scss/partials/variables' as *;
+
+.bg-buttercup{
+  background-color: $Buttercup;
+}
 
 .my_card{
   border: 0;

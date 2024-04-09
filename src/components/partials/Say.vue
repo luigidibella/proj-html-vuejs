@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <div class="container-fluid d-flex flex-column justify-content-center align-items-center bg-body-tertiary py-5">
+  <div class="container-fluid flex-center flex-column  py-5">
     <div class="section_title my-4">
       <h2>What Student Say</h2>
     </div> 
@@ -16,7 +16,7 @@ export default {
         <i class="fa-solid fa-arrow-left-long"></i>
       </div>
 
-      <div class="d-flex justify-content-center align-items-center my_say_container mb-3">
+      <div class="flex-center my_say_container mb-3">
         <div class="img_profile mx-2">
           <img src="../../assets/images/1-100x100.jpg" alt="">
         </div>
@@ -59,6 +59,8 @@ export default {
 
 <style lang="scss" scoped>
 
+@use '../../assets/scss/partials/variables' as *;
+
 .my_say_container{
   width: 750px;
 }
@@ -84,7 +86,7 @@ export default {
 }
 
 .star{
- color: #f2b91e;
+ color: $Buttercup;
 }
 
 .text{

@@ -85,14 +85,26 @@ export default {
 
 <style lang="scss" scoped>
 
+@use '../../assets/scss/partials/variables' as *;
+
 .my_card{
-  border-left: 5px solid #f2b91e;
+  border-left: 5px solid $Buttercup;
+  border-top: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
   border-radius: 0;
   box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.3);
+  &:hover{
+    border-color: $White;
+    background-color: $Buttercup;
+    .icon{
+      color: $White;
+    }
+  }
 }
 
 .icon{
-  color: #f2b91e;
+  color: $Buttercup;
   font-size: 2.5rem;
 }
 </style>
