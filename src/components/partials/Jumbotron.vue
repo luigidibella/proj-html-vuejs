@@ -51,9 +51,9 @@ export default {
     <!-- /Copertina -->
     
     <!-- Bio -->
-    <div class="bio d-flex justify-content-around align-items-center my-5 py-5 mx-5 my-3 text-start">
+    <div class="bio d-flex justify-content-between align-items-center my-5 py-5 my-3 text-start">
       <div class="left d-flex flex-column justify-content-center align-items-center">
-        <div class="founder">
+        <div class="founder mb-3">
           <h2>Hey there, my name is John Doe. I'm the founder of the Brain Academy.</h2>
         </div>
 
@@ -100,7 +100,7 @@ img{
 }
 
 .bio{
-  width: 1310px;
+  width: 1170px;
 }
 
 .left{

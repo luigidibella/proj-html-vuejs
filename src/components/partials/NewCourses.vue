@@ -5,11 +5,192 @@ export default {
 </script>
 
 <template>
-  <div class="container text-center">
-    <h3>New Courses</h3>
+  <div class="container-fluid d-flex flex-column justify-content-center align-items-center bg-body-tertiary py-4">
+    <div class="section_title my-4">
+      <h2>New Courses</h2>
+    </div> 
+
+    <div class="row row-cols-3 my_sub_container">
+      
+      <div class="col py-2">
+        <div class="card position-relative">
+          <img class="card-img-top" src="../../assets/images/photo-1496307042754-b4aa456c4a2d-370x200.jpeg" alt="Card image cap">
+          
+          <span class="position-absolute top-0 end-0 badge bg-warning m-2">
+            SPECIAL
+          </span>
+          
+          <div class="card-body">
+            <h5 class="card-title">How to be a DJ? Make Electronic Music</h5>
+            <p class="card-text">Electronic</p>
+            <div class="options d-flex justify-content-center align-items-center">
+              <div class="level me-2">
+                <i class="fa-solid fa-signal text-warning"></i>
+                <span> Advanced</span>
+              </div>
+              <div class="lectures me-2">
+                <i class="fa-solid fa-list-ul text-warning"></i>
+                <span> 8 Lectures</span>
+              </div>
+              <div class="hours">
+                <i class="fa-regular fa-clock text-warning"></i>
+                <span> 6 Hours</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col py-2">
+        <div class="card position-relative">
+          <img class="card-img-top" src="../../assets/images/photo-1496307042754-b4aa456c4a2d-370x200.jpeg" alt="Card image cap">
+          
+          <span class="position-absolute top-0 end-0 badge bg-warning m-2">
+            SPECIAL
+          </span>
+          
+          <div class="card-body">
+            <h5 class="card-title">How to be a DJ? Make Electronic Music</h5>
+            <p class="card-text">Electronic</p>
+            <div class="options d-flex justify-content-center align-items-center">
+              <div class="level me-2">
+                <i class="fa-solid fa-signal text-warning"></i>
+                <span> Advanced</span>
+              </div>
+              <div class="lectures me-2">
+                <i class="fa-solid fa-list-ul text-warning"></i>
+                <span> 8 Lectures</span>
+              </div>
+              <div class="hours">
+                <i class="fa-regular fa-clock text-warning"></i>
+                <span> 6 Hours</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col py-2">
+        <div class="card position-relative">
+          <img class="card-img-top" src="../../assets/images/photo-1496307042754-b4aa456c4a2d-370x200.jpeg" alt="Card image cap">
+          
+          <span class="position-absolute top-0 end-0 badge bg-warning m-2">
+            SPECIAL
+          </span>
+          
+          <div class="card-body">
+            <h5 class="card-title">How to be a DJ? Make Electronic Music</h5>
+            <p class="card-text">Electronic</p>
+            <div class="options d-flex justify-content-center align-items-center">
+              <div class="level me-2">
+                <i class="fa-solid fa-signal text-warning"></i>
+                <span> Advanced</span>
+              </div>
+              <div class="lectures me-2">
+                <i class="fa-solid fa-list-ul text-warning"></i>
+                <span> 8 Lectures</span>
+              </div>
+              <div class="hours">
+                <i class="fa-regular fa-clock text-warning"></i>
+                <span> 6 Hours</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col py-2">
+        <div class="card position-relative">
+          <img class="card-img-top" src="../../assets/images/photo-1496307042754-b4aa456c4a2d-370x200.jpeg" alt="Card image cap">
+          
+          <span class="position-absolute top-0 end-0 badge bg-warning m-2">
+            SPECIAL
+          </span>
+          
+          <div class="card-body">
+            <h5 class="card-title">How to be a DJ? Make Electronic Music</h5>
+            <p class="card-text">Electronic</p>
+            <div class="options d-flex justify-content-center align-items-center">
+              <div class="level me-2">
+                <i class="fa-solid fa-signal text-warning"></i>
+                <span> Advanced</span>
+              </div>
+              <div class="lectures me-2">
+                <i class="fa-solid fa-list-ul text-warning"></i>
+                <span> 8 Lectures</span>
+              </div>
+              <div class="hours">
+                <i class="fa-regular fa-clock text-warning"></i>
+                <span> 6 Hours</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col py-2">
+        <div class="card position-relative">
+          <img class="card-img-top" src="../../assets/images/photo-1496307042754-b4aa456c4a2d-370x200.jpeg" alt="Card image cap">
+          
+          <span class="position-absolute top-0 end-0 badge bg-warning m-2">
+            SPECIAL
+          </span>
+          
+          <div class="card-body">
+            <h5 class="card-title">How to be a DJ? Make Electronic Music</h5>
+            <p class="card-text">Electronic</p>
+            <div class="options d-flex justify-content-center align-items-center">
+              <div class="level me-2">
+                <i class="fa-solid fa-signal text-warning"></i>
+                <span> Advanced</span>
+              </div>
+              <div class="lectures me-2">
+                <i class="fa-solid fa-list-ul text-warning"></i>
+                <span> 8 Lectures</span>
+              </div>
+              <div class="hours">
+                <i class="fa-regular fa-clock text-warning"></i>
+                <span> 6 Hours</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col py-2">
+        <div class="card position-relative">
+          <img class="card-img-top" src="../../assets/images/photo-1496307042754-b4aa456c4a2d-370x200.jpeg" alt="Card image cap">
+          
+          <span class="position-absolute top-0 end-0 badge bg-warning m-2">
+            SPECIAL
+          </span>
+          
+          <div class="card-body">
+            <h5 class="card-title">How to be a DJ? Make Electronic Music</h5>
+            <p class="card-text">Electronic</p>
+            <div class="options d-flex justify-content-center align-items-center">
+              <div class="level me-2">
+                <i class="fa-solid fa-signal text-warning"></i>
+                <span> Advanced</span>
+              </div>
+              <div class="lectures me-2">
+                <i class="fa-solid fa-list-ul text-warning"></i>
+                <span> 8 Lectures</span>
+              </div>
+              <div class="hours">
+                <i class="fa-regular fa-clock text-warning"></i>
+                <span> 6 Hours</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="btn btn-warning rounded-5 text-white mt-3">LOAD MORE</div>
   </div>
 </template>
 
 <style lang="scss" scoped>
+
+.my_sub_container{
+  width: 1170px;
+}
 
 </style>
