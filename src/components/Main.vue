@@ -20,8 +20,8 @@ export default {
 
 <template>
   <main>
-    <div class="container text-center">
-      <h1>Main</h1>
+    <div class="container-fluid text-center px-0">
+      <!-- <h1>Main</h1> -->
       <Jumbotron />
       <NewCourses />
       <Amazon />
@@ -33,5 +33,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+
+@use '../assets/scss/main.scss';
 
 </style>
