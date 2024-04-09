@@ -98,7 +98,7 @@ export default {
 }
 
 .right{
-  width: 40%;
+  width: 55%;
 }
 
 </style>

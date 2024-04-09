@@ -12,7 +12,7 @@ export default {
 
     <div class="row row-cols-2 my_container">
       <div class="col">
-        <div class="card my_card mb-3">
+        <div class="card my_card mb-3 py-3">
           <div class="row g-0">
             <div class="col-md-2">
               <div class="icon py-3">
@@ -29,7 +29,7 @@ export default {
         </div>
       </div>
       <div class="col">
-        <div class="card my_card mb-3">
+        <div class="card my_card mb-3 py-3">
           <div class="row g-0">
             <div class="col-md-2">
               <div class="icon py-3">
@@ -46,7 +46,7 @@ export default {
         </div>
       </div>
       <div class="col">
-        <div class="card my_card mb-3">
+        <div class="card my_card mb-3 py-3">
           <div class="row g-0">
             <div class="col-md-2">
               <div class="icon py-3">
@@ -63,7 +63,7 @@ export default {
         </div>
       </div>
       <div class="col">
-        <div class="card my_card mb-3">
+        <div class="card my_card mb-3 py-3">
           <div class="row g-0">
             <div class="col-md-2">
               <div class="icon py-3">
@@ -85,13 +85,10 @@ export default {
 
 <style lang="scss" scoped>
 
-.col{
-  /* border: 1px solid greenyellow; */
-}
-
 .my_card{
   border-left: 5px solid #f2b91e;
   border-radius: 0;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.3);
 }
 
 .icon{
