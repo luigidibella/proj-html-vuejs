@@ -74,4 +74,8 @@ export default {
 
 <style lang="scss" scoped>
 
+.active{
+  border-bottom: 2px solid #f2b91e;
+}
+
 </style>
