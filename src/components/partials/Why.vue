@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <div class="container-fluid d-flex flex-column justify-content-center align-items-center py-4">
+  <div class="container-fluid flex-center flex-column py-4">
     <div class="section_title my-4">
       <h2>Why my Courses?</h2>
     </div>
@@ -107,4 +107,5 @@ export default {
   color: $Buttercup;
   font-size: 2.5rem;
 }
+
 </style>

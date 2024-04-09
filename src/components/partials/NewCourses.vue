@@ -199,6 +199,7 @@ export default {
   color: $White;
   background-color: $Buttercup;
   &:hover{
+    color: $White;
     background-color: #d9a61b;
   }
 }

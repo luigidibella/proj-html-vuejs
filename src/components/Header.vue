@@ -8,14 +8,19 @@ export default {
   <header>
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid my_container my-3">
+        <!-- Logo -->
         <a class="navbar-brand" href="#">
-          <img src="..\assets\images\MasterStudy-1.svg" alt="">
+          <img src="..\assets\images\MasterStudy-1.svg" alt="logo">
         </a>
-
+        <!-- /Logo -->
+        
+        <!-- Bottone -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <!-- /Bottone -->
 
+        <!-- Menu -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
             <li class="nav-item">
@@ -41,7 +46,9 @@ export default {
             </li>
           </ul>
         </div>
-
+        <!-- /Menu -->
+        
+        <!-- Social -->
         <div class="collapse navbar-collapse" id="navbarSupportedContentSocial">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
@@ -66,7 +73,8 @@ export default {
             </li>
           </ul>
         </div>
-
+        <!-- /Social -->
+        
       </div>
     </nav>
   </header>

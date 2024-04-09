@@ -21,7 +21,6 @@ export default {
 <template>
   <main>
     <div class="container-fluid text-center px-0">
-      <!-- <h1>Main</h1> -->
       <Jumbotron />
       <NewCourses />
       <Amazon />

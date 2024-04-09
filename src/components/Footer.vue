@@ -8,11 +8,12 @@ export default {
   <footer>
     <div class="container-fluid flex-center bg-buttercup py-4">
       <div class="row row-cols-4 my_container">
+        <!-- About -->
         <div class="col">
           <div class="title">
             <h6>ABOUT</h6>
           </div>
-
+          
           <div class="info">
             <ul>
               <li>Masterstudy is Education Wordpress theme featured by Learning</li>
@@ -20,35 +21,39 @@ export default {
               <li>Developed by StylemixThemes.</li>
             </ul>
           </div>
-
+          
           <div class="social">
             <i class="fa-brands fa-facebook me-3 fs-5"></i>
             <i class="fa-brands fa-twitter me-3 fs-5"></i>
             <i class="fa-brands fa-instagram me-3 fs-5"></i>
           </div>
         </div>
+        <!-- /About -->
         
+        <!-- Contact -->
         <div class="col">
           <div class="title">
             <h6>CONTACT</h6>
           </div>
-
+          
           <div class="info">
             <ul>
               <li>USA, CAllifornia 20, First Avenue, CAllifornia</li>
             </ul>
-
+            
             <ul>
               <li>TEL.:+1 212 458 300 32</li>
               <li>FAX: +1 212 375 24 14</li>
             </ul>
-
+            
             <ul>
               <li>info@masterstudy.com</li>
             </ul>
           </div>
         </div>
-
+        <!-- /Contact -->
+        
+        <!-- Pages -->
         <div class="col">
           <div class="title">
             <h6>PAGES</h6>
@@ -68,16 +73,18 @@ export default {
             </ul>
           </div>
         </div>
+        <!-- /Pages -->
 
+        <!-- Blog -->
         <div class="col">
           <div class="title">
-            <h6>PAGES</h6>
+            <h6>BLOG</h6>
           </div>
-
+          
           <div class="row">
-
+            
             <div class="card my_card">
-              <div class="row g-0 d-flex justify-content-center align-items-center">
+              <div class="row g-0 flex-center">
                 <div class="col-md-4">
                   <img src="../assets/images/photo-1517520287167-4bbf64a00d66-75x75.jpeg" class="img-fluid" alt="...">
                 </div>
@@ -89,9 +96,9 @@ export default {
                 </div>
               </div>
             </div>
-
+            
             <div class="card my_card">
-              <div class="row g-0 d-flex justify-content-center align-items-center">
+              <div class="row g-0 flex-center">
                 <div class="col-md-4">
                   <img src="../assets/images/photo-1490376840453-5f616fbebe5b-75x75.jpeg" class="img-fluid" alt="...">
                 </div>
@@ -103,9 +110,10 @@ export default {
                 </div>
               </div>
             </div>
-          
+            
           </div>
         </div>
+        <!-- /Blog -->
       </div>
     </div>
   </footer>
@@ -138,4 +146,5 @@ export default {
 .info_exception{
   line-height: 2rem;
 }
+
 </style>

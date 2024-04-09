@@ -8,7 +8,7 @@ export default {
   <div class="container-fluid flex-center flex-column px-0">
     <!-- Copertina -->
     <div class="cover flex-center flex-column position-relative mb-5">
-      <img src="..\..\assets\images\slide-1.jpg" alt="">
+      <img src="..\..\assets\images\slide-1.jpg" alt="slide">
       
       <div class="title text-start position-absolute">
         <h1 class="mb-4">Start your Human <span>Revolution</span> today</h1>
@@ -21,16 +21,15 @@ export default {
           <div class="limited mb-4">
             <h3><span>Limited sale: </span> All courses with 55% off</h3>
           </div>
-          <!-- <div class="subscribe d-flex rounded-5 bg-white">
-            <input type="email" class="form-control rounded-start-5 border-end-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your E-mail">
-            <button type="submit" class="btn btn-success rounded-5">Subscribe</button>
-          </div> -->
+          <!-- Iscrizione -->
           <div class="subscribe input-group rounded-5">
-            <input type="email" class="form-control rounded-start-5 border-0" placeholder="Enter your E-mail" aria-label="Example text with button addon" aria-describedby="button-addon1">
-            <button type="submit" class="btn btn-success rounded-5">Subscribe</button>
+            <input type="email" class="form-control rounded-start-5 border-0" id="exampleInputEmail1" placeholder="Enter your E-mail" aria-label="Example text with button addon" aria-describedby="button-addon1">
+            <button type="submit" class="btn bg-darkvibrant rounded-5">Subscribe</button>
           </div>
+          <!-- /Iscrizione -->
         </div>
         
+        <!-- Countdown -->
         <div class="countdown d-flex gap-3 ">
           <div class="days">
             <h2>26</h2>
@@ -49,6 +48,7 @@ export default {
             <p>Seconds</p>
           </div>
         </div>
+        <!-- /Countdown -->
       </div>
       <!-- /Sconto -->
     </div>
@@ -62,7 +62,7 @@ export default {
         </div>
 
         <div class="sign">
-          <img src="..\..\assets\images\sign-184x108.jpg" alt="">
+          <img src="..\..\assets\images\sign-184x108.jpg" alt="sign">
         </div>
       </div>
   
@@ -83,7 +83,6 @@ export default {
   width: 520px;
   top: 20%;
   right: 20%;
-  /* border: 1px solid greenyellow; */
   h1{
     font-size: 4rem;
     span{
@@ -104,6 +103,15 @@ export default {
     }
     .subscribe{
       background-color: $White;
+      .btn{
+        color: $White;;
+      }
+      .bg-darkvibrant{
+        background-color: #2d4649;
+        &:hover{
+          background-color: $DarkVibrant;
+        }
+      }
     }
   }
   .countdown{

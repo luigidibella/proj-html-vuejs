@@ -6,8 +6,7 @@ export default {
 
 <template>
   <div class="container-fluid px-0 bg_img flex-center">
-    <!-- <img src="../../assets/images/slider_1-1917x607-1914x606.jpg" alt=""> -->
-    <div class="row row-cols-5 my_container py-5">
+    <div class="row row-cols-5 my_container">
       <div class="col flex-center">
         <div class="icon me-3 flex-center">
           <i class="fa-solid fa-user-group fs-1"></i>
@@ -99,6 +98,7 @@ h2{
   height: 600px;
   background-image: url(../../assets/images/counter-1919x1101.jpg);
   background-position-x: center;
+  background-size: cover;
 }
 
 </style>

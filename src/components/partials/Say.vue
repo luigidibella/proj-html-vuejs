@@ -18,13 +18,13 @@ export default {
 
       <div class="flex-center my_say_container mb-3">
         <div class="img_profile mx-2">
-          <img src="../../assets/images/1-100x100.jpg" alt="">
+          <img src="../../assets/images/1-100x100.jpg" alt="img-1">
         </div>
         <div class="img_profile mx-2 active">
-          <img src="../../assets/images/2-100x100.jpg" alt="">
+          <img src="../../assets/images/2-100x100.jpg" alt="img-2">
         </div>
         <div class="img_profile mx-2 ">
-          <img src="../../assets/images/4-100x100.jpg" alt="">
+          <img src="../../assets/images/4-100x100.jpg" alt="img-4">
         </div>
       </div>
 
@@ -67,6 +67,10 @@ export default {
 
 .carousel{
   width: 615px;
+}
+
+.btn:hover{
+  color: rgb(0, 0, 0, 0.5);
 }
 
 .img_profile{

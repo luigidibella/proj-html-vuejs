@@ -10,12 +10,12 @@ export default {
       <div class="col flex-center flex-column">
         <h2 class="mb-3 fs-1">Get My Exclusive Investing Book just fot $19.50</h2>
         <p class="fs-4">Vestibulum imentum eu urna ve/ cursus. Aenean vehicula quam quam, vitae pel/entesque urna elementum cursus.</p>
-        <a href="">
-          <img src="../../assets/images/amazon.png" alt="">
+        <a href="#">
+          <img src="../../assets/images/amazon.png" alt="amazon">
         </a>
       </div>
       <div class="col">
-        <img src="../../assets/images/book.png" alt="">
+        <img src="../../assets/images/book.png" alt="book">
       </div>
     </div>
   </div>
