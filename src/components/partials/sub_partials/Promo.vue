@@ -1,6 +1,56 @@
 <script>
 export default {
-  
+  data() {
+    const targetDate = new Date("2024-04-10T18:00:00Z");
+    targetDate.setUTCHours(targetDate.getUTCHours() - 2);
+    return {
+      days: 0,
+      hours: 0,
+      minutes: 0,
+      seconds: 0,
+      countdownInterval: null,
+      targetDate: targetDate.getTime() 
+    };
+  },
+
+  mounted() {
+    this.startCountdown();
+  },
+
+  beforeDestroy() {
+    clearInterval(this.countdownInterval);
+  },
+
+  methods: {
+    startCountdown() {
+      this.updateCountdown(); 
+      this.countdownInterval = setInterval(() => {
+        this.updateCountdown();
+      }, 1000);
+    },
+
+    updateCountdown() {
+      const now = new Date().getTime();
+      const distance = this.targetDate - now;
+
+      this.days = this.formatNumber(Math.floor(distance / (1000 * 60 * 60 * 24)));
+      this.hours = this.formatNumber(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
+      this.minutes = this.formatNumber(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)));
+      this.seconds = this.formatNumber(Math.floor((distance % (1000 * 60)) / 1000));
+
+      if (distance < 0) {
+        clearInterval(this.countdownInterval);
+        this.days = '00';
+        this.hours = '00';
+        this.minutes = '00';
+        this.seconds = '00';
+      }
+    },
+
+    formatNumber(number) {
+      return number < 10 ? '0' + number : number;
+    }
+  }
 }
 </script>
 
@@ -22,19 +72,19 @@ export default {
     <!-- Countdown -->
     <div class="countdown d-flex gap-3 ">
       <div class="days">
-        <h2>26</h2>
+        <h2>{{ days }}</h2>
         <p>Days</p>
       </div>
       <div class="hours">
-        <h2>01</h2>
+        <h2>{{ hours }}</h2>
         <p>Hours</p>
       </div>
       <div class="minutes">
-        <h2>47</h2>
+        <h2>{{ minutes }}</h2>
         <p>Minutes</p>
       </div>
       <div class="seconds">
-        <h2>31</h2>
+        <h2>{{ seconds }}</h2>
         <p>Seconds</p>
       </div>
     </div>
