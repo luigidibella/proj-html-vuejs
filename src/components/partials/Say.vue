@@ -79,6 +79,7 @@ export default {
     width: 80%;
     &:hover{
       width: 100%;
+      cursor: pointer;
     }
   }
 }

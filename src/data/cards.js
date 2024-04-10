@@ -84,24 +84,19 @@ const dataCard = {
       data: 'Online Learner'
     },
     {
-      icon: '<i class="fa-solid fa-user-group fs-1"></i>',
-      num: '3195',
-      data: 'Online Learner'
+      icon: '<i class="fa-solid fa-film fs-1"></i>',
+      num: '23',
+      data: 'Video Courses'
     },
     {
-      icon: '<i class="fa-solid fa-user-group fs-1"></i>',
-      num: '3195',
-      data: 'Online Learner'
+      icon: '<i class="fa-regular fa-image fs-1"></i>',
+      num: '437',
+      data: 'Sliders & Images'
     },
     {
-      icon: '<i class="fa-solid fa-user-group fs-1"></i>',
-      num: '3195',
-      data: 'Online Learner'
-    },
-    {
-      icon: '<i class="fa-solid fa-user-group fs-1"></i>',
-      num: '3195',
-      data: 'Online Learner'
+      icon: '<i class="fa-regular fa-thumbs-up fs-1"></i>',
+      num: '1440',
+      data: 'Excellent Reviews'
     }
   ]
 }

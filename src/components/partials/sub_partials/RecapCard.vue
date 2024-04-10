@@ -1,20 +1,32 @@
 <script>
+import { store } from '../../../data/store';
+
 export default {
-  
+  props: {
+    icon: String,
+    num: String,
+    data: String,
+  },
+
+  data() {
+    return {
+      store,
+    }
+  }
 }
 </script>
 
 <template>
   <div class="col flex-center">
-    <div class="icon me-3 flex-center">
-      <i class="fa-solid fa-user-group fs-1"></i>
+    <div class="icon me-3 flex-center" v-html="icon">
+      
     </div>
     <div class="info d-flex flex-column text-start">
       <div class="num">
-        <h2>3195</h2>
+        <h2>{{ num }}</h2>
       </div>
       <div class="data">
-        <span>Online Learner</span>
+        <span>{{ data }}</span>
       </div>
     </div>
   </div>
@@ -26,6 +38,14 @@ export default {
 
 h2{
   color: $Buttercup;
+}
+
+.col{
+  &:hover{
+  background-color: rgb(255, 255, 255, 0.3);
+  border-radius: 20px;
+  cursor: pointer;
+  }
 }
 
 .icon,

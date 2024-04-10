@@ -1,23 +1,42 @@
 <script>
-import RecapCard from './sub_partials/RecapCard.vue'
+import RecapCard from './sub_partials/RecapCard.vue';
+import { store } from '../../data/store';
 
 export default {
   components:{
     RecapCard
+  },
+
+  data(){
+    return{
+      store
+    }
+  },
+
+  computed:{
+    cardRecap(){
+      return store.card.recap
+    },
+    
+  },
+
+  mounted() {
+
   }
-  
 }
 </script>
 
 <template>
   <div class="container-fluid px-0 bg_img flex-center">
-    <div class="row row-cols-5 my_container">
+    <div class="row row-cols-4 my_container">
 
-      <RecapCard />
-      <RecapCard />
-      <RecapCard />
-      <RecapCard />
-      <RecapCard />
+      <RecapCard 
+        v-for="card in this.cardRecap"
+        :key="card.id"
+        :icon="card.icon"
+        :num="card.num"
+        :data="card.data"
+      />
       
     </div>
   </div>
