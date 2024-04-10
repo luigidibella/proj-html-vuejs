@@ -8,39 +8,34 @@ export default {
   },
 
   computed:{
-      aboutMenu(){
-        return store.footer.about
-      },
-
-      socialMenu(){
-        return store.footer.social
-      },
-      
-      contactMenu(){
-        return store.footer.contact
-      },
-      
-      pagesMenu1(){
-        return store.footer.pages1
-      },
-
-      pagesMenu2(){
-        return store.footer.pages2
-      },
-      
-      blogMenu(){
-        return store.footer.blog
-      }
+    aboutMenu(){
+      return store.footer.about
     },
 
-    mounted() {
-    console.log(this.aboutMenu);
-    console.log(this.socialMenu);
-    console.log(this.contactMenu);
-    console.log(this.pagesMenu1);
-    console.log(this.pagesMenu2);
-    console.log(this.blogMenu);
+    socialMenu(){
+      return store.footer.social
+    },
+    
+    contactMenu(){
+      return store.footer.contact
+    },
+    
+    pagesMenu1(){
+      return store.footer.pages1
+    },
+
+    pagesMenu2(){
+      return store.footer.pages2
+    },
+    
+    blogMenu(){
+      return store.footer.blog
+    }
   },
+
+  mounted() {
+  
+},
   
 }
 </script>
@@ -129,7 +124,6 @@ export default {
                 <a :href="item.href">{{ item.text }}</a>
               </li>
             </ul>
-            
 
             <!-- <ul>
               <li>Blog</li>
