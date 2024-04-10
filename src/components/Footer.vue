@@ -213,6 +213,7 @@ a{
   color: $DarkMuted;
   &:hover{
     color: $Muted;
+    text-decoration: underline;
   }
 }
 

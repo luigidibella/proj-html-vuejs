@@ -73,19 +73,19 @@ export default {
     <div class="countdown d-flex gap-3 ">
       <div class="days">
         <h2>{{ days }}</h2>
-        <p>Days</p>
+        <strong>Days</strong>
       </div>
       <div class="hours">
         <h2>{{ hours }}</h2>
-        <p>Hours</p>
+        <strong>Hours</strong>
       </div>
       <div class="minutes">
         <h2>{{ minutes }}</h2>
-        <p>Minutes</p>
+        <strong>Minutes</strong>
       </div>
       <div class="seconds">
         <h2>{{ seconds }}</h2>
-        <p>Seconds</p>
+        <strong>Seconds</strong>
       </div>
     </div>
     <!-- /Countdown -->
@@ -104,7 +104,7 @@ export default {
   .discount{
     .limited{
       span{
-       color: $White; 
+       color: $White;
       }
     }
     .subscribe{

@@ -61,4 +61,11 @@ export default {
   }
 }
 
+.card-text{
+  color: $DoveGrey;
+  &:hover{
+    color: $MineShaft;
+  }
+}
+
 </style>
