@@ -62,18 +62,18 @@ const dataCard = {
       text: 'estibulum vitae aliquam nunc. Suspendisse mollis metus ac tellus egestas pharetra. Suspendisse at viverra urus. Pellentesque nec posuere ligula, eu congue leo. Inte ervul utate tem or arcu. Vestibulum vul utate'
     },
     {
-      icon: '<i class="fa-solid fa-suitcase"></i>',
-      title: 'Enterpreneurship',
+      icon: '<i class="fa-solid fa-rocket"></i>',
+      title: 'Accelerated learning',
       text: 'estibulum vitae aliquam nunc. Suspendisse mollis metus ac tellus egestas pharetra. Suspendisse at viverra urus. Pellentesque nec posuere ligula, eu congue leo. Inte ervul utate tem or arcu. Vestibulum vul utate'
     },
     {
-      icon: '<i class="fa-solid fa-suitcase"></i>',
-      title: 'Enterpreneurship',
+      icon: '<i class="fa-regular fa-thumbs-up"></i>',
+      title: 'Productivity',
       text: 'estibulum vitae aliquam nunc. Suspendisse mollis metus ac tellus egestas pharetra. Suspendisse at viverra urus. Pellentesque nec posuere ligula, eu congue leo. Inte ervul utate tem or arcu. Vestibulum vul utate'
     },
     {
-      icon: '<i class="fa-solid fa-suitcase"></i>',
-      title: 'Enterpreneurship',
+      icon: '<i class="fa-solid fa-gear"></i>',
+      title: 'Life Coaching',
       text: 'estibulum vitae aliquam nunc. Suspendisse mollis metus ac tellus egestas pharetra. Suspendisse at viverra urus. Pellentesque nec posuere ligula, eu congue leo. Inte ervul utate tem or arcu. Vestibulum vul utate'
     }
   ],

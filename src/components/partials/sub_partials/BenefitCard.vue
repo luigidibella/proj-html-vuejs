@@ -1,6 +1,18 @@
 <script>
+import { store } from '../../../data/store';
+
 export default {
-  
+  props: {
+    icon: String,
+    title: String,
+    text: String,
+  },
+
+  data() {
+    return {
+      store,
+    }
+  }
 }
 </script>
 
@@ -9,14 +21,14 @@ export default {
     <div class="card my_card mb-3 py-3">
       <div class="row g-0">
         <div class="col-md-2">
-          <div class="icon py-3">
-            <i class="fa-solid fa-suitcase"></i>
+          <div class="icon py-3" v-html="icon">
+            
           </div>
         </div>
         <div class="col-md-9">
           <div class="card-body text-start px-0">
-            <h5 class="card-title">Enterpreneurship</h5>
-            <p class="card-text">estibulum vitae aliquam nunc. Suspendisse mollis metus ac tellus egestas pharetra. Suspendisse at viverra urus. Pellentesque nec posuere ligula, eu congue leo. Inte ervul utate tem or arcu. Vestibulum vul utate</p>
+            <h5 class="card-title">{{ title }}</h5>
+            <p class="card-text">{{ text }}</p>
           </div>
         </div>
       </div>

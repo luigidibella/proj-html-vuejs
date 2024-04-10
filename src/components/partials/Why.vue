@@ -1,9 +1,28 @@
 <script>
-import BenefitCard from './sub_partials/BenefitCard.vue'
+import BenefitCard from './sub_partials/BenefitCard.vue';
+import { store } from '../../data/store';
 
 export default {
   components:{
     BenefitCard
+  },
+
+  data(){
+    return{
+      store
+    }
+  },
+
+  computed:{
+    cardBenefit(){
+      return store.card.benefit
+    },
+    
+  },
+
+  mounted() {
+    console.log(this.cardBenefit);
+    
   }
   
 }
@@ -17,10 +36,13 @@ export default {
 
     <div class="row row-cols-2 my_container">
       
-      <BenefitCard />
-      <BenefitCard />
-      <BenefitCard />
-      <BenefitCard />
+      <BenefitCard
+        v-for="card in this.cardBenefit"
+        :key="card.id"
+        :icon="card.icon"
+        :title="card.title"
+        :text="card.text"
+      />
 
     </div>
   </div>
