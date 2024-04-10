@@ -1,9 +1,27 @@
 <script>
-import CourseCard from './sub_partials/CourseCard.vue'
+import CourseCard from './sub_partials/CourseCard.vue';
+import { store } from '../../data/store'
 
 export default {
   components:{
     CourseCard
+  },
+
+  data(){
+    return{
+      store
+    }
+  },
+
+  computed:{
+    cardCourse(){
+      return store.card.course
+    },
+    
+  },
+
+  mounted() {
+    
   }
   
 }
@@ -18,12 +36,17 @@ export default {
 
     <div class="row row-cols-3 my_container">
 
-      <CourseCard />
-      <CourseCard />
-      <CourseCard />
-      <CourseCard />
-      <CourseCard />
-      <CourseCard />
+      <CourseCard 
+        v-for="card in this.cardCourse"
+        :key="card.id"
+        :price="card.price"
+        :img="card.img"
+        :title="card.title"
+        :type="card.type"
+        :level="card.level"
+        :lectures="card.lectures"
+        :hours="card.hours"
+      />
 
     </div>
 

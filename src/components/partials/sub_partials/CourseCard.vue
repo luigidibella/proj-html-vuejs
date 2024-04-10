@@ -1,6 +1,22 @@
 <script>
+import { store } from '../../../data/store';
+
 export default {
-  
+  props: {
+    price: String,
+    img: String,
+    title: String,
+    type: String,
+    level: String,
+    lectures: String,
+    hours: String,
+  },
+
+  data() {
+    return {
+      store,
+    }
+  }
 }
 </script>
 
@@ -9,32 +25,32 @@ export default {
     <div class="card position-relative">
       <!-- Price -->
       <div class="price position-absolute d-flex justify-content-center">
-        <strong class="text-white fs-3">$59</strong>
+        <strong class="text-white fs-3">{{ price }}</strong>
       </div>
       <!-- /Price -->
       
-      <img class="card-img-top" src="../../../assets/images/photo-1496307042754-b4aa456c4a2d-370x200.jpeg" alt="Card image cap">
+      <img class="card-img-top" :src="`src/assets/images/${img}`" alt="Card image cap">
       
       <span class="position-absolute top-0 end-0 badge bg-warning m-2">
         SPECIAL
       </span>
       
       <div class="card-body">
-        <h5 class="card-title">How to be a DJ? Make Electronic Music</h5>
-        <p class="card-text type">Electronic</p>
+        <h5 class="card-title">{{ title }}</h5>
+        <p class="card-text type">{{ type }}</p>
         <hr>
         <div class="options flex-center">
           <div class="level me-2">
             <i class="fa-solid fa-signal color-buttercup"></i>
-            <span> Advanced</span>
+            <span>&nbsp;{{ level }}</span>
           </div>
           <div class="lectures me-2">
             <i class="fa-solid fa-list-ul color-buttercup"></i>
-            <span> 8 Lectures</span>
+            <span>&nbsp;{{ lectures }}</span>
           </div>
           <div class="hours">
             <i class="fa-regular fa-clock color-buttercup"></i>
-            <span> 6 Hours</span>
+            <span>&nbsp;{{ hours }}</span>
           </div>
         </div>
       </div>
