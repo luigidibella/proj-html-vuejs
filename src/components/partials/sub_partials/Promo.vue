@@ -9,7 +9,10 @@ export default {
       minutes: 0,
       seconds: 0,
       countdownInterval: null,
-      targetDate: targetDate.getTime() 
+      targetDate: targetDate.getTime(),
+      email: '',
+      subscribed: false,
+      emailError: false
     };
   },
 
@@ -49,6 +52,20 @@ export default {
 
     formatNumber(number) {
       return number < 10 ? '0' + number : number;
+    },
+
+    subscribe() {
+      this.subscribed = false;
+      this.emailError = false;
+      if (this.email.trim() !== "") {
+        const emailPattern = /\S+@\S+\.\S+/;
+        if (!emailPattern.test(this.email)) {
+          this.emailError = true; 
+        } else {
+          this.subscribed = true;
+          this.emailError = false;
+        }
+      }
     }
   }
 }
@@ -63,9 +80,13 @@ export default {
       </div>
       <!-- Iscrizione -->
       <div class="subscribe input-group rounded-5">
-        <input type="email" class="form-control rounded-start-5 border-0" id="exampleInputEmail1" placeholder="Enter your E-mail" aria-label="Example text with button addon" aria-describedby="button-addon1">
-        <button type="submit" class="btn bg-darkvibrant rounded-5">Subscribe</button>
+        <input type="email" id="ExampleEmail" class="form-control rounded-start-5 border-0" @keyup.enter="subscribe" v-model="email" placeholder="Enter your E-mail" aria-label="Example text with button addon" aria-describedby="button-addon1">
+        <button type="button" class="btn bg-darkvibrant rounded-5" @click="subscribe">Subscribe</button>
       </div>
+      <div v-if="!subscribed && !emailError">&nbsp;</div>
+      <div v-if="subscribed" id="thankYouMessage">Thank you for subscribing!</div>
+      <div v-if="emailError" class="error-message">Invalid email format</div>
+      
       <!-- /Iscrizione -->
     </div>
     
