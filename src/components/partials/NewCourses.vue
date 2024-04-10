@@ -14,6 +14,12 @@ export default {
       
       <div class="col py-2">
         <div class="card position-relative">
+          <!-- Price -->
+          <div class="price position-absolute d-flex justify-content-center">
+            <strong class="text-white fs-3">$59</strong>
+          </div>
+          <!-- /Price -->
+          
           <img class="card-img-top" src="../../assets/images/photo-1496307042754-b4aa456c4a2d-370x200.jpeg" alt="Card image cap">
           
           <span class="position-absolute top-0 end-0 badge bg-warning m-2">
@@ -22,7 +28,8 @@ export default {
           
           <div class="card-body">
             <h5 class="card-title">How to be a DJ? Make Electronic Music</h5>
-            <p class="card-text">Electronic</p>
+            <p class="card-text type">Electronic</p>
+            <hr>
             <div class="options flex-center">
               <div class="level me-2">
                 <i class="fa-solid fa-signal color-buttercup"></i>
@@ -42,6 +49,12 @@ export default {
       </div>
       <div class="col py-2">
         <div class="card position-relative">
+          <!-- Price -->
+          <div class="price position-absolute d-flex justify-content-center">
+            <strong class="text-white fs-3">$59</strong>
+          </div>
+          <!-- /Price -->
+          
           <img class="card-img-top" src="../../assets/images/photo-1496307042754-b4aa456c4a2d-370x200.jpeg" alt="Card image cap">
           
           <span class="position-absolute top-0 end-0 badge bg-warning m-2">
@@ -50,7 +63,8 @@ export default {
           
           <div class="card-body">
             <h5 class="card-title">How to be a DJ? Make Electronic Music</h5>
-            <p class="card-text">Electronic</p>
+            <p class="card-text type">Electronic</p>
+            <hr>
             <div class="options flex-center">
               <div class="level me-2">
                 <i class="fa-solid fa-signal color-buttercup"></i>
@@ -70,6 +84,12 @@ export default {
       </div>
       <div class="col py-2">
         <div class="card position-relative">
+          <!-- Price -->
+          <div class="price position-absolute d-flex justify-content-center">
+            <strong class="text-white fs-3">$59</strong>
+          </div>
+          <!-- /Price -->
+          
           <img class="card-img-top" src="../../assets/images/photo-1496307042754-b4aa456c4a2d-370x200.jpeg" alt="Card image cap">
           
           <span class="position-absolute top-0 end-0 badge bg-warning m-2">
@@ -78,7 +98,8 @@ export default {
           
           <div class="card-body">
             <h5 class="card-title">How to be a DJ? Make Electronic Music</h5>
-            <p class="card-text">Electronic</p>
+            <p class="card-text type">Electronic</p>
+            <hr>
             <div class="options flex-center">
               <div class="level me-2">
                 <i class="fa-solid fa-signal color-buttercup"></i>
@@ -98,6 +119,12 @@ export default {
       </div>
       <div class="col py-2">
         <div class="card position-relative">
+          <!-- Price -->
+          <div class="price position-absolute d-flex justify-content-center">
+            <strong class="text-white fs-3">$59</strong>
+          </div>
+          <!-- /Price -->
+          
           <img class="card-img-top" src="../../assets/images/photo-1496307042754-b4aa456c4a2d-370x200.jpeg" alt="Card image cap">
           
           <span class="position-absolute top-0 end-0 badge bg-warning m-2">
@@ -106,7 +133,8 @@ export default {
           
           <div class="card-body">
             <h5 class="card-title">How to be a DJ? Make Electronic Music</h5>
-            <p class="card-text">Electronic</p>
+            <p class="card-text type">Electronic</p>
+            <hr>
             <div class="options flex-center">
               <div class="level me-2">
                 <i class="fa-solid fa-signal color-buttercup"></i>
@@ -126,6 +154,12 @@ export default {
       </div>
       <div class="col py-2">
         <div class="card position-relative">
+          <!-- Price -->
+          <div class="price position-absolute d-flex justify-content-center">
+            <strong class="text-white fs-3">$59</strong>
+          </div>
+          <!-- /Price -->
+          
           <img class="card-img-top" src="../../assets/images/photo-1496307042754-b4aa456c4a2d-370x200.jpeg" alt="Card image cap">
           
           <span class="position-absolute top-0 end-0 badge bg-warning m-2">
@@ -134,7 +168,8 @@ export default {
           
           <div class="card-body">
             <h5 class="card-title">How to be a DJ? Make Electronic Music</h5>
-            <p class="card-text">Electronic</p>
+            <p class="card-text type">Electronic</p>
+            <hr>
             <div class="options flex-center">
               <div class="level me-2">
                 <i class="fa-solid fa-signal color-buttercup"></i>
@@ -154,6 +189,12 @@ export default {
       </div>
       <div class="col py-2">
         <div class="card position-relative">
+          <!-- Price -->
+          <div class="price position-absolute d-flex justify-content-center">
+            <strong class="text-white fs-3">$59</strong>
+          </div>
+          <!-- /Price -->
+          
           <img class="card-img-top" src="../../assets/images/photo-1496307042754-b4aa456c4a2d-370x200.jpeg" alt="Card image cap">
           
           <span class="position-absolute top-0 end-0 badge bg-warning m-2">
@@ -162,7 +203,8 @@ export default {
           
           <div class="card-body">
             <h5 class="card-title">How to be a DJ? Make Electronic Music</h5>
-            <p class="card-text">Electronic</p>
+            <p class="card-text type">Electronic</p>
+            <hr>
             <div class="options flex-center">
               <div class="level me-2">
                 <i class="fa-solid fa-signal color-buttercup"></i>
@@ -190,6 +232,27 @@ export default {
 <style lang="scss" scoped>
 
 @use '../../assets/scss/partials/variables' as *;
+
+.price{
+  width: 100%;
+  height: 100%;
+  border-radius: 0.375rem;
+  strong{
+    display: none;
+    position: absolute;
+    top: 25%;
+  }
+  
+  &:hover{
+    background-color: rgb(0, 0, 0, 0.3);
+    strong{
+      display: flex;
+    }
+  }
+}
+.type{
+  color: $Silver;
+}
 
 .color-buttercup{
   color: $Buttercup;
