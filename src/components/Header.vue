@@ -1,5 +1,26 @@
 <script>
+import { store } from '../data/store'
 export default {
+  data(){
+    return{
+      store
+    }
+  },
+
+  computed:{
+      mainMenu(){
+        return store.header.main
+      },
+      
+      socialMenu(){
+        return store.header.social
+      }
+    },
+
+  mounted() {
+    console.log(this.mainMenu);
+    console.log(this.socialMenu);
+  },
   
 }
 </script>
@@ -23,7 +44,23 @@ export default {
         <!-- Menu -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
-            <li class="nav-item">
+            <li 
+              v-for="(item, index) in mainMenu"
+              :key="`m-${index}`"
+              class="nav-item"
+            >
+              <a 
+                class="nav-link" 
+                :class="{'position-relative':item.new}" 
+                aria-current="page" :href="item.href"
+              >
+                {{item.text}}
+                <span v-if="item.new" class="position-absolute top-0 start-100 translate-middle badge bg-danger">
+                  NEW
+                </span>
+              </a>
+            </li>
+            <!-- <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#">Courses</a>
             </li>
             <li class="nav-item">
@@ -43,7 +80,7 @@ export default {
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="#">Demos</a>
-            </li>
+            </li> -->
           </ul>
         </div>
         <!-- /Menu -->
@@ -51,7 +88,16 @@ export default {
         <!-- Social -->
         <div class="collapse navbar-collapse" id="navbarSupportedContentSocial">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
+            <li 
+              v-for="(item, index) in socialMenu"
+              :key="`s-${index}`"
+              class="nav-item"
+            >
+              <a class="nav-link" aria-current="page" :href="item.href" v-html="item.text">
+                
+              </a>
+            </li>
+            <!-- <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#">
                 <i class="fa-brands fa-linkedin"></i>
               </a>
@@ -70,7 +116,7 @@ export default {
               <a class="nav-link" href="#">
                 <i class="fa-brands fa-twitter"></i>
               </a>
-            </li>
+            </li> -->
           </ul>
         </div>
         <!-- /Social -->
