@@ -1,5 +1,46 @@
 <script>
+import { store } from '../data/store'
 export default {
+  data(){
+    return{
+      store
+    }
+  },
+
+  computed:{
+      aboutMenu(){
+        return store.footer.about
+      },
+
+      socialMenu(){
+        return store.footer.social
+      },
+      
+      contactMenu(){
+        return store.footer.contact
+      },
+      
+      pagesMenu1(){
+        return store.footer.pages1
+      },
+
+      pagesMenu2(){
+        return store.footer.pages2
+      },
+      
+      blogMenu(){
+        return store.footer.blog
+      }
+    },
+
+    mounted() {
+    console.log(this.aboutMenu);
+    console.log(this.socialMenu);
+    console.log(this.contactMenu);
+    console.log(this.pagesMenu1);
+    console.log(this.pagesMenu2);
+    console.log(this.blogMenu);
+  },
   
 }
 </script>
@@ -16,16 +57,31 @@ export default {
           
           <div class="info">
             <ul>
-              <li>Masterstudy is Education Wordpress theme featured by Learning</li>
+              <li
+                v-for="(item, index) in aboutMenu"
+                :key="`a-${index}`"
+              >
+                <a :href="item.href">{{ item.text }}</a>
+              </li>
+              <!-- <li>Masterstudy is Education Wordpress theme featured by Learning</li>
               <li>Management System (LMS) for online education.</li>
-              <li>Developed by StylemixThemes.</li>
+              <li>Developed by StylemixThemes.</li> -->
             </ul>
           </div>
           
           <div class="social">
-            <i class="fa-brands fa-facebook me-3 fs-5"></i>
-            <i class="fa-brands fa-twitter me-3 fs-5"></i>
-            <i class="fa-brands fa-instagram me-3 fs-5"></i>
+            <ul >
+              <li>
+                <a 
+                  v-for="(item, index) in socialMenu"
+                  :key="`s-${index}`"
+                  class="social"
+                  :href="item.href"
+                  v-html="item.text"
+                >
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
         <!-- /About -->
@@ -37,18 +93,15 @@ export default {
           </div>
           
           <div class="info">
-            <ul>
-              <li>USA, CAllifornia 20, First Avenue, CAllifornia</li>
+            <ul
+              v-for="(item, index) in contactMenu"
+              :key="`c-${index}`"
+            >
+              <li>
+                <a :href="item.href">{{ item.text }}</a>
+              </li>
             </ul>
             
-            <ul>
-              <li>TEL.:+1 212 458 300 32</li>
-              <li>FAX: +1 212 375 24 14</li>
-            </ul>
-            
-            <ul>
-              <li>info@masterstudy.com</li>
-            </ul>
           </div>
         </div>
         <!-- /Contact -->
@@ -59,8 +112,26 @@ export default {
             <h6>PAGES</h6>
           </div>
 
-          <div class="row row-cols-2 info_exception ms-2 ">
+          <div class="row row-cols-2 info_exception">
             <ul>
+              <li
+                v-for="(item, index) in pagesMenu1"
+                :key="`p-${index}`"
+              >
+                <a :href="item.href">{{ item.text }}</a>
+              </li>
+            </ul>
+            <ul>
+              <li
+                v-for="(item, index) in pagesMenu2"
+                :key="`p-${index}`"
+              >
+                <a :href="item.href">{{ item.text }}</a>
+              </li>
+            </ul>
+            
+
+            <!-- <ul>
               <li>Blog</li>
               <li>Home</li>
               <li>Shortcodes</li>
@@ -70,7 +141,7 @@ export default {
               <li>Courses</li>
               <li>Membership A..</li>
               <li>Typografy</li>
-            </ul>
+            </ul> -->
           </div>
         </div>
         <!-- /Pages -->
@@ -83,7 +154,27 @@ export default {
           
           <div class="row">
             
-            <div class="card my_card">
+            <div 
+              v-for="(item, index) in blogMenu"
+              :key="`b-${index}`"
+              class="card my_card"
+            >
+              <div class="row g-0 flex-center">
+                <div class="col-md-4">
+                  <img :src="`src/assets/images/${item.img}`" class="img-fluid" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <a :href="item.href">
+                      <h6 class="card-title my-0">{{ item.text }}</h6>
+                    </a>
+                    <p class="card-text"><small class="text-secondary">{{ item.date }}</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- <div class="card my_card">
               <div class="row g-0 flex-center">
                 <div class="col-md-4">
                   <img src="../assets/images/photo-1517520287167-4bbf64a00d66-75x75.jpeg" class="img-fluid" alt="...">
@@ -109,7 +200,7 @@ export default {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
             
           </div>
         </div>
@@ -122,6 +213,19 @@ export default {
 <style lang="scss" scoped>
 
 @use '../assets/scss/partials/variables' as *;
+
+a{
+  text-decoration: none;
+  color: $DarkMuted;
+  &:hover{
+    color: $Muted;
+  }
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+}
 
 .bg-buttercup{
   background-color: $Buttercup;
@@ -140,15 +244,11 @@ export default {
   }
 }
 
-.info{
-  ul{
-    list-style: none;
-    padding: 0;
-  }
-}
-
 .info_exception{
   line-height: 2rem;
+  ul{
+    list-style: disc;
+  }
 }
 
 </style>
