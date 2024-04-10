@@ -8,18 +8,17 @@ export default {
   },
 
   computed:{
-      mainMenu(){
-        return store.header.main
-      },
-      
-      socialMenu(){
-        return store.header.social
-      }
+    mainMenu(){
+      return store.header.main
     },
+    
+    socialMenu(){
+      return store.header.social
+    }
+  },
 
   mounted() {
-    console.log(this.mainMenu);
-    console.log(this.socialMenu);
+    
   },
   
 }
