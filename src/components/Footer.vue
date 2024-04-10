@@ -134,6 +134,10 @@ export default {
   h6{
     font-size: 0.9rem;
   }
+  &:hover{
+  background-color: rgb(255, 255, 255, 0.3);
+  border-radius: 20px;
+  }
 }
 
 .info{
