@@ -26,7 +26,7 @@ export default {
 
 <template>
   <header>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg my-bg-white fixed-top">
       <div class="container-fluid my_container my-3">
         <!-- Logo -->
         <a class="navbar-brand" href="#">
@@ -128,6 +128,11 @@ export default {
 <style lang="scss" scoped>
 
 @use '../assets/scss/partials/variables' as *;
+
+.my-bg-white{
+  background-color: $White;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
 
 .nav-link:hover,
 .active{

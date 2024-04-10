@@ -73,6 +73,7 @@ export default {
   }
   &:hover{
     background-color: rgb(0, 0, 0, 0.3);
+    cursor: pointer;
     strong{
       display: flex;
     }

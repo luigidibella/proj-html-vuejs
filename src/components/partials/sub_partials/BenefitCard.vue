@@ -54,6 +54,7 @@ export default {
   &:hover{
     border-color: $White;
     background-color: $Buttercup;
+    cursor: pointer;
     .icon{
       color: $White;
     }

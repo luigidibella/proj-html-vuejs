@@ -1,7 +1,7 @@
 <script>
 export default {
   data() {
-    const targetDate = new Date("2024-04-10T18:00:00Z");
+    const targetDate = new Date("2024-04-11T18:00:00Z");
     targetDate.setUTCHours(targetDate.getUTCHours() - 2);
     return {
       days: 0,

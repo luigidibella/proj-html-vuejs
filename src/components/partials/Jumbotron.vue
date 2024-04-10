@@ -10,7 +10,7 @@ export default {
 </script>
 
 <template>
-  <div class="container-fluid flex-center flex-column px-0">
+  <div class="container-fluid flex-center flex-column px-0 my_pt">
     <!-- Copertina -->
     <div class="cover flex-center flex-column position-relative mb-5">
       <img src="..\..\assets\images\slide-1.jpg" alt="slide">
@@ -26,7 +26,7 @@ export default {
     <!-- /Copertina -->
     
     <!-- Bio -->
-    <div class="bio my_container d-flex justify-content-between align-items-center text-start my-5 py-5">
+    <div class="bio my_container d-flex justify-content-between align-items-start text-start mt-5 py-5">
       <div class="left flex-center flex-column">
         <div class="founder mb-3">
           <h2>Hey there, my name is John Doe. I'm the founder of the Brain Academy.</h2>
@@ -50,6 +50,10 @@ export default {
 
 @use '../../assets/scss/partials/variables' as *;
 
+.my_pt{
+  padding-top: 100px;
+}
+
 .title{
   width: 520px;
   top: 20%;
@@ -64,10 +68,10 @@ export default {
 
 .bio{
   .left{
-    width: 30%;
+    width: 33%;
   }
   .right{
-    width: 55%;
+    width: 52%;
   }
 }
 
